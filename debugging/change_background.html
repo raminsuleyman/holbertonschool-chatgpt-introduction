@@ -21,7 +21,6 @@
 
 <h2>Click the button to change the background color</h2>
 
-<!-- Düzəltdim: colorButon → colorButton -->
 <button id="colorButton">Change Color</button>
 
 <script>
@@ -30,11 +29,10 @@
     });
 
     function changeBackgroundColor() {
-        // Düzəltdim: rəng həmişə 6 rəqəm olacaq
-        var randomColor = "#" + Math.floor(Math.random()*16777215).toString(16).padStart(6, '0');
+        var randomColor = "#" + Math.floor(Math.random()*16777215).toString(16);
         document.body.style.backgroundColor = randomColor;
     }
 </script>
 
 </body>
-</html>
+</html>     
